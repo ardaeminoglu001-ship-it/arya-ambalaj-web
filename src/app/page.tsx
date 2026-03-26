@@ -93,65 +93,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* NEW TRUST RIBBON - Sleek horizontal bar */}
-        <section id="hakkimizda" className="bg-brand-red py-12 border-y border-white/10 relative z-20 shadow-2xl overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/10">
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-center px-4"
-              >
-                <Award className="w-8 h-8 text-green-400 mx-auto mb-3" />
-                <h4 className="text-white font-bold text-xl mb-1">15 Yıl</h4>
-                <p className="text-red-200 text-sm">Sektörel Tecrübe</p>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-center px-4"
-              >
-                <Star className="w-8 h-8 text-green-400 mx-auto mb-3" />
-                <h4 className="text-white font-bold text-xl mb-1">1. Sırada</h4>
-                <p className="text-red-200 text-sm">Bölgenin İlk Toptancısı</p>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-center px-4"
-              >
-                <Box className="w-8 h-8 text-green-400 mx-auto mb-3" />
-                <h4 className="text-white font-bold text-xl mb-1">Geniş Çeşitlilik</h4>
-                <p className="text-red-200 text-sm">Her İhtiyaca Uygun</p>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className="text-center px-4"
-              >
-                <ShieldCheck className="w-8 h-8 text-green-400 mx-auto mb-3" />
-                <h4 className="text-white font-bold text-xl mb-1">%100 Güven</h4>
-                <p className="text-red-200 text-sm">Memnuniyet Garantisi</p>
-              </motion.div>
-
-            </div>
-          </div>
-        </section>
-
         {/* NEW ABOUT US SECTION (Hakkımızda Text) */}
-        <section className="py-24 bg-[#F8F9FA] relative z-10 overflow-hidden">
+        <section id="hakkimizda" className="py-24 bg-[#F8F9FA] relative z-10 overflow-hidden">
           {/* Subtle Leaf watermark background (symbolizing the sycamore tree/çınar) */}
           <div className="absolute -bottom-32 -right-32 w-[600px] h-[600px] text-brand-red opacity-[0.03] pointer-events-none rotate-12">
             <Leaf className="w-full h-full" />
@@ -171,9 +114,12 @@ export default function Home() {
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 rounded-full text-brand-red font-bold text-sm tracking-wide mb-6">
                   <Award className="w-4 h-4" /> KÖKLÜ GEÇMİŞ
                 </div>
-                <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-[#1A237E] leading-tight tracking-tight mb-8">
-                  <span className="text-brand-red">15 Yıllık</span> Güven, <br/> Bölgenin Kök Salan Çınarı
+                <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-[#1A237E] leading-tight tracking-tight mb-4">
+                  Hakkımızda
                 </h2>
+                <h3 className="text-2xl md:text-3xl font-bold text-brand-red mb-8">
+                  15 Yıllık Güven, Bölgenin Kök Salan Çınarı
+                </h3>
                 
                 <div className="space-y-6 text-[#333333] text-lg leading-relaxed font-light">
                   <p>
