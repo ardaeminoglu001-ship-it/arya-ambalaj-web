@@ -23,7 +23,7 @@ export function Header() {
 
           <div className="hidden md:flex items-center gap-4">
             <a href="tel:05424434495" className="font-semibold text-brand-navy">0542 443 44 95</a>
-            <a href="#iletisim" className="bg-brand-navy text-white px-6 py-2.5 rounded-full font-medium hover:bg-blue-800 transition-colors shadow-lg shadow-blue-900/20">
+            <a href="https://wa.me/905424434495" target="_blank" rel="noreferrer" className="bg-brand-navy text-white px-6 py-2.5 rounded-full font-medium hover:bg-green-600 transition-colors shadow-lg shadow-blue-900/20">
               Fiyat Teklifi Al
             </a>
           </div>
