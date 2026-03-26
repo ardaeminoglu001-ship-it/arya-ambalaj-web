@@ -39,7 +39,7 @@ export default function Home() {
               </h1>
               
               <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl font-light">
-                Ankara Hüseyingazi ve Karapürçek'in ilk toptancısı. Gıda, endüstriyel ve lojistik paketlemede kalitenin adresi Arya Ambalaj.
+                Ankara'nın kalbinde, Hüseyingazi ve Karapürçek bölgelerinin öncü toptancısı: Arya Ambalaj! 15 yıllık sarsılmaz tecrübemiz ve kaliteden ödün vermeyen anlayışımızla; gıda, endüstriyel, paketleme, süs ve pastacılık ambalajlarında aradığınız her şeyi tek çatı altında buluşturuyoruz.
               </p>
               
               <motion.div 
