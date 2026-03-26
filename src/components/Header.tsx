@@ -1,5 +1,5 @@
 "use client";
-import { PackageOpen, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -11,7 +11,6 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center gap-2">
-            <PackageOpen className="w-8 h-8 text-brand-red" strokeWidth={2.5} />
             <span className="font-bold text-2xl tracking-tight text-brand-red">Arya Ambalaj</span>
           </div>
 

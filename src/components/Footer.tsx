@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, PackageOpen } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -8,7 +8,6 @@ export function Footer() {
           
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <PackageOpen className="w-8 h-8 text-red-400" />
               <span className="font-bold text-2xl tracking-tight text-white">Arya Ambalaj</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
