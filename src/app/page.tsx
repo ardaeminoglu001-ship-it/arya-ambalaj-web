@@ -147,7 +147,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h4 className="text-xs uppercase tracking-widest text-blue-300 font-bold mb-1">Adres</h4>
-                        <p className="text-xl font-medium">Karapürçek Mahallesi,<br/>Hüseyingazi, Altındağ / Ankara</p>
+                        <p className="text-xl font-medium">Beşikkaya Mah. 1953. Sk. No:6,<br/>06360 Altındağ / Ankara</p>
                       </div>
                     </div>
 
@@ -167,7 +167,7 @@ export default function Home() {
             {/* Right side: Interactive Map */}
             <div className="w-full lg:w-1/2 bg-white relative min-h-[400px] lg:min-h-full">
               <iframe 
-                src="https://maps.google.com/maps?q=Karap%C3%BCr%C3%A7ek,%20Alt%C4%B1nda%C4%9F,%20Ankara&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                src="https://maps.google.com/maps?q=Be%C5%9Fikkaya%2C%201953.%20Sk.%20No%3A6%2C%2006360%20Alt%C4%B1nda%C4%9F%2FAnkara&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                 className="absolute inset-0 w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700"
                 allowFullScreen
                 loading="lazy" 
