@@ -164,30 +164,25 @@ export default function Home() {
                </div>
             </div>
 
-            {/* Right side: Modern Form */}
-            <div className="w-full lg:w-1/2 bg-white flex flex-col justify-center px-8 py-24 lg:p-24">
-              <div className="max-w-lg lg:mr-auto">
-                <h3 className="text-3xl font-bold text-slate-900 mb-2">Hızlı Sipariş & İletişim</h3>
-                <p className="text-gray-500 mb-10">Toptan fiyat teklifi almak veya ihtiyacınızı iletmek için formu doldurun.</p>
-                
-                <form className="space-y-6">
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider pl-1">İsim Soyisim</label>
-                    <input type="text" className="w-full px-4 py-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-green-500 transition-all font-medium text-slate-900" placeholder="Adınız Soyadınız" />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider pl-1">Telefon</label>
-                    <input type="tel" className="w-full px-4 py-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-green-500 transition-all font-medium text-slate-900" placeholder="05XX XXX XX XX" />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider pl-1">Ürün İhtiyacınız</label>
-                    <textarea rows={4} className="w-full px-4 py-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-green-500 transition-all font-medium text-slate-900 resize-none" placeholder="Almak istediğiniz ürünler veya mesajınız..."></textarea>
-                  </div>
-                  <button type="submit" className="w-full bg-slate-900 text-white px-6 py-5 rounded-xl font-bold hover:bg-green-600 transition-colors shadow-xl shadow-slate-900/10 text-lg flex items-center justify-center gap-3">
-                    Gönder <ArrowRight className="w-5 h-5" />
-                  </button>
-                </form>
-              </div>
+            {/* Right side: Interactive Map */}
+            <div className="w-full lg:w-1/2 bg-white relative min-h-[400px] lg:min-h-full">
+              <iframe 
+                src="https://maps.google.com/maps?q=Karap%C3%BCr%C3%A7ek,%20Alt%C4%B1nda%C4%9F,%20Ankara&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                className="absolute inset-0 w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700"
+                allowFullScreen
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Arya Ambalaj Konum"
+              ></iframe>
+              <a 
+                href="https://share.google/R0jRjqpav9hLZB8ol" 
+                target="_blank"
+                rel="noreferrer"
+                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-8 py-4 rounded-full font-bold shadow-2xl hover:bg-green-600 transition-colors flex items-center gap-3 z-10"
+              >
+                <MapPin className="w-5 h-5" />
+                Google Haritalar'da Aç
+              </a>
             </div>
           </div>
         </section>
