@@ -129,9 +129,9 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="text-center px-4"
               >
-                <Zap className="w-8 h-8 text-green-400 mx-auto mb-3" />
-                <h4 className="text-white font-bold text-xl mb-1">Hızlı Teslimat</h4>
-                <p className="text-red-200 text-sm">Aynı Gün Sevkiyat</p>
+                <Box className="w-8 h-8 text-green-400 mx-auto mb-3" />
+                <h4 className="text-white font-bold text-xl mb-1">Geniş Çeşitlilik</h4>
+                <p className="text-red-200 text-sm">Her İhtiyaca Uygun</p>
               </motion.div>
 
               <motion.div 
