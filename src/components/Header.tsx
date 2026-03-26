@@ -11,19 +11,19 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center gap-2">
-            <PackageOpen className="w-8 h-8 text-brand-navy" strokeWidth={2.5} />
-            <span className="font-bold text-2xl tracking-tight text-brand-navy">Arya Ambalaj</span>
+            <PackageOpen className="w-8 h-8 text-brand-red" strokeWidth={2.5} />
+            <span className="font-bold text-2xl tracking-tight text-brand-red">Arya Ambalaj</span>
           </div>
 
           <nav className="hidden md:flex space-x-8">
-            <a href="#hakkimizda" className="text-gray-600 hover:text-brand-navy font-medium transition-colors">Hakkımızda</a>
-            <a href="#urunler" className="text-gray-600 hover:text-brand-navy font-medium transition-colors">Ürünler</a>
-            <a href="#iletisim" className="text-gray-600 hover:text-brand-navy font-medium transition-colors">İletişim</a>
+            <a href="#hakkimizda" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Hakkımızda</a>
+            <a href="#urunler" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Ürünler</a>
+            <a href="#iletisim" className="text-gray-600 hover:text-brand-red font-medium transition-colors">İletişim</a>
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:05424434495" className="font-semibold text-brand-navy">0542 443 44 95</a>
-            <a href="https://wa.me/905424434495" target="_blank" rel="noreferrer" className="bg-brand-navy text-white px-6 py-2.5 rounded-full font-medium hover:bg-green-600 transition-colors shadow-lg shadow-blue-900/20">
+            <a href="tel:05424434495" className="font-semibold text-brand-red">0542 443 44 95</a>
+            <a href="https://wa.me/905424434495" target="_blank" rel="noreferrer" className="bg-brand-red text-white px-6 py-2.5 rounded-full font-medium hover:bg-green-600 transition-colors shadow-lg shadow-red-900/20">
               Fiyat Teklifi Al
             </a>
           </div>
@@ -43,10 +43,10 @@ export function Header() {
             className="md:hidden bg-white border-b border-gray-100 overflow-hidden"
           >
             <div className="px-4 py-4 space-y-4 flex flex-col">
-              <a href="#hakkimizda" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-navy font-medium">Hakkımızda</a>
-              <a href="#urunler" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-navy font-medium">Ürünler</a>
-              <a href="#iletisim" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-navy font-medium">İletişim</a>
-              <a href="tel:05424434495" className="text-brand-navy font-bold py-2">0542 443 44 95</a>
+              <a href="#hakkimizda" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Hakkımızda</a>
+              <a href="#urunler" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Ürünler</a>
+              <a href="#iletisim" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">İletişim</a>
+              <a href="tel:05424434495" className="text-brand-red font-bold py-2">0542 443 44 95</a>
             </div>
           </motion.div>
         )}

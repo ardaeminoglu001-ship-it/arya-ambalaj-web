@@ -11,7 +11,7 @@ export default function Home() {
         {/* NEW HERO SECTION - Full height, cinematic */}
         <section className="relative w-full h-[90vh] min-h-[700px] flex items-end pb-24 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
           {/* Subtle gradient overlay to ensure text readability without hiding the image */}
-          <div className="absolute inset-0 bg-brand-navy/50 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-brand-red/50 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -45,28 +45,28 @@ export default function Home() {
         </section>
 
         {/* NEW TRUST RIBBON - Sleek horizontal bar */}
-        <section className="bg-brand-navy py-12 border-y border-white/10 relative z-20 shadow-2xl">
+        <section className="bg-brand-red py-12 border-y border-white/10 relative z-20 shadow-2xl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/10">
               <div className="text-center px-4">
                 <Award className="w-8 h-8 text-green-400 mx-auto mb-3" />
                 <h4 className="text-white font-bold text-xl mb-1">15 Yıl</h4>
-                <p className="text-blue-200 text-sm">Sektörel Tecrübe</p>
+                <p className="text-red-200 text-sm">Sektörel Tecrübe</p>
               </div>
               <div className="text-center px-4">
                 <Star className="w-8 h-8 text-green-400 mx-auto mb-3" />
                 <h4 className="text-white font-bold text-xl mb-1">1. Sırada</h4>
-                <p className="text-blue-200 text-sm">Bölgenin İlk Toptancısı</p>
+                <p className="text-red-200 text-sm">Bölgenin İlk Toptancısı</p>
               </div>
               <div className="text-center px-4">
                 <Zap className="w-8 h-8 text-green-400 mx-auto mb-3" />
                 <h4 className="text-white font-bold text-xl mb-1">Hızlı Teslimat</h4>
-                <p className="text-blue-200 text-sm">Aynı Gün Sevkiyat</p>
+                <p className="text-red-200 text-sm">Aynı Gün Sevkiyat</p>
               </div>
               <div className="text-center px-4">
                 <ShieldCheck className="w-8 h-8 text-green-400 mx-auto mb-3" />
                 <h4 className="text-white font-bold text-xl mb-1">%100 Güven</h4>
-                <p className="text-blue-200 text-sm">Memnuniyet Garantisi</p>
+                <p className="text-red-200 text-sm">Memnuniyet Garantisi</p>
               </div>
             </div>
           </div>
@@ -97,23 +97,23 @@ export default function Home() {
 
               {/* Bento Item 2: Tall */}
               <div className="md:col-span-4 bg-slate-900 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden group hover:shadow-2xl transition-all flex flex-col justify-between">
-                <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-600/20 blur-3xl rounded-full"></div>
+                <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-red-600/20 blur-3xl rounded-full"></div>
                 <div>
-                  <Box className="w-16 h-16 text-blue-400 mb-8" />
+                  <Box className="w-16 h-16 text-red-400 mb-8" />
                   <h4 className="text-3xl font-bold mb-4">Endüstriyel</h4>
-                  <p className="text-blue-100 text-lg mb-8">Üretim tesisleri ve fabrikalar için koli bantları ve palet streçleri.</p>
+                  <p className="text-red-100 text-lg mb-8">Üretim tesisleri ve fabrikalar için koli bantları ve palet streçleri.</p>
                 </div>
                 <ul className="space-y-4">
                   {['Koli Bantları', 'Palet Streç Filmler', 'Baloncuklu Naylon'].map((item, i) => (
-                    <li key={i} className="flex items-center text-blue-50 font-medium border-b border-white/10 pb-3"><ArrowRight className="w-4 h-4 text-blue-400 mr-3"/>{item}</li>
+                    <li key={i} className="flex items-center text-red-50 font-medium border-b border-white/10 pb-3"><ArrowRight className="w-4 h-4 text-red-400 mr-3"/>{item}</li>
                   ))}
                 </ul>
               </div>
 
               {/* Bento Item 3: Wide */}
               <div className="md:col-span-12 bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col md:flex-row items-center gap-12 group hover:shadow-xl transition-all">
-                <div className="w-24 h-24 shrink-0 bg-blue-50 rounded-2xl flex items-center justify-center">
-                  <PackageOpen className="w-12 h-12 text-brand-navy" />
+                <div className="w-24 h-24 shrink-0 bg-red-50 rounded-2xl flex items-center justify-center">
+                  <PackageOpen className="w-12 h-12 text-brand-red" />
                 </div>
                 <div className="flex-grow">
                   <h4 className="text-3xl font-bold text-slate-900 mb-4">Mağaza ve Taşıma Çözümleri</h4>
@@ -135,10 +135,10 @@ export default function Home() {
             
             {/* Left side: Maps/Info (dark) */}
             <div className="w-full lg:w-1/2 bg-slate-900 text-white flex flex-col justify-center px-8 py-24 lg:p-24 relative overflow-hidden">
-               <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-400 via-transparent to-transparent"></div>
+               <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-red-400 via-transparent to-transparent"></div>
                <div className="relative z-10 max-w-lg lg:ml-auto">
                  <h2 className="text-4xl md:text-5xl font-extrabold mb-6">Ziyaret Edin</h2>
-                 <p className="text-blue-200 text-lg mb-12">Hüseyingazi ve Karapürçek bölgesinin merkezinde, geniş ürün stoğumuzla sizi bekliyoruz.</p>
+                 <p className="text-red-200 text-lg mb-12">Hüseyingazi ve Karapürçek bölgesinin merkezinde, geniş ürün stoğumuzla sizi bekliyoruz.</p>
                  
                  <div className="space-y-8">
                     <div className="flex items-start gap-6 group">
@@ -146,7 +146,7 @@ export default function Home() {
                         <MapPin className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="text-xs uppercase tracking-widest text-blue-300 font-bold mb-1">Adres</h4>
+                        <h4 className="text-xs uppercase tracking-widest text-red-300 font-bold mb-1">Adres</h4>
                         <p className="text-xl font-medium">Beşikkaya Mah. 1953. Sk. No:6,<br/>06360 Altındağ / Ankara</p>
                       </div>
                     </div>
@@ -156,7 +156,7 @@ export default function Home() {
                         <Phone className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="text-xs uppercase tracking-widest text-blue-300 font-bold mb-1">Direkt Hat & WhatsApp</h4>
+                        <h4 className="text-xs uppercase tracking-widest text-red-300 font-bold mb-1">Direkt Hat & WhatsApp</h4>
                         <a href="tel:05424434495" className="text-xl font-medium hover:text-green-400 transition-colors">0542 443 44 95</a>
                       </div>
                     </div>

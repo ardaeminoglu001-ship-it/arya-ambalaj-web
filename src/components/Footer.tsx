@@ -8,7 +8,7 @@ export function Footer() {
           
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <PackageOpen className="w-8 h-8 text-blue-400" />
+              <PackageOpen className="w-8 h-8 text-red-400" />
               <span className="font-bold text-2xl tracking-tight text-white">Arya Ambalaj</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
@@ -29,15 +29,15 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-6 border-b border-slate-700 pb-2 inline-block">İletişim Bilgileri</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400">
-                <MapPin className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
                 <span>Beşikkaya Mah. 1953. Sk. No:6<br/>06360 Altındağ / Ankara</span>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
-                <Phone className="w-5 h-5 text-blue-400 shrink-0" />
+                <Phone className="w-5 h-5 text-red-400 shrink-0" />
                 <a href="tel:05424434495" className="hover:text-white transition-colors">0542 443 44 95</a>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
-                <Mail className="w-5 h-5 text-blue-400 shrink-0" />
+                <Mail className="w-5 h-5 text-red-400 shrink-0" />
                 <a href="mailto:info@aryaambalaj.com" className="hover:text-white transition-colors">info@aryaambalaj.com</a>
               </li>
             </ul>
