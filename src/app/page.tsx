@@ -54,24 +54,39 @@ export default function Home() {
           </div>
         </section>
 
-        {/* NEW CATALOG CTA BANNER */}
-        <section className="py-20 bg-white relative z-20">
-          <div className="max-w-4xl mx-auto px-4 text-center">
+        {/* FEATURED PRODUCTS (Öne Çıkan Ürünlerimiz) */}
+        <section className="py-24 bg-white relative z-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-brand-red rounded-3xl p-10 md:p-16 text-white shadow-2xl relative overflow-hidden"
+              className="text-center mb-16"
             >
-              <div className="absolute top-0 right-0 w-64 h-64 bg-red-600/50 rounded-bl-full -z-10"></div>
-              <PackageOpen className="w-16 h-16 text-red-300 mb-6 mx-auto" />
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">Geniş Ürün Yelpazemiz</h3>
-              <p className="text-red-100 text-lg mb-8 max-w-xl mx-auto">
-                Yüzlerce ambalaj ve paketleme çeşidi arasından ihtiyacınıza en uygun olanı bulmak için kataloğumuzu inceleyin.
+              <h3 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">Öne Çıkan Ürünlerimiz</h3>
+              <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+                Müşterilerimiz tarafından en çok tercih edilen ve kalitesiyle fark yaratan seçili ürünlerimiz.
               </p>
-              <Link href="/katalog" className="inline-flex items-center gap-2 bg-white text-brand-red px-8 py-4 rounded-full font-bold hover:bg-slate-50 transition-all shadow-lg hover:scale-105">
-                Katalog / Ürünlerimize Git
+            </motion.div>
+
+            {/* Placeholder / Empty State for Admin Panel Integration */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-slate-50 border border-slate-100 rounded-3xl p-12 text-center max-w-3xl mx-auto shadow-sm"
+            >
+              <div className="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Star className="w-10 h-10 text-brand-red" />
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-2">Öne Çıkan Ürünler Güncelleniyor</h4>
+              <p className="text-gray-500 mb-8">
+                Admin paneli üzerinden "Öne Çıkar" olarak işaretlenen ürünleriniz burada dinamik olarak listelenecektir.
+              </p>
+              <Link href="/katalog" className="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-3 rounded-full font-bold hover:bg-brand-red transition-colors shadow-lg shadow-red-900/20">
+                Tüm Kataloğu İncele
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
