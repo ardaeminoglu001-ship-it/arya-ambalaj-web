@@ -150,6 +150,94 @@ export default function Home() {
           </div>
         </section>
 
+        {/* NEW ABOUT US SECTION (Hakkımızda Text) */}
+        <section className="py-24 bg-[#F8F9FA] relative z-10 overflow-hidden">
+          {/* Subtle Leaf watermark background (symbolizing the sycamore tree/çınar) */}
+          <div className="absolute -bottom-32 -right-32 w-[600px] h-[600px] text-brand-red opacity-[0.03] pointer-events-none rotate-12">
+            <Leaf className="w-full h-full" />
+          </div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+              
+              {/* Text Side */}
+              <motion.div 
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.8 }}
+                className="lg:col-span-6"
+              >
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 rounded-full text-brand-red font-bold text-sm tracking-wide mb-6">
+                  <Award className="w-4 h-4" /> KÖKLÜ GEÇMİŞ
+                </div>
+                <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-[#1A237E] leading-tight tracking-tight mb-8">
+                  <span className="text-brand-red">15 Yıllık</span> Güven, <br/> Bölgenin Kök Salan Çınarı
+                </h2>
+                
+                <div className="space-y-6 text-[#333333] text-lg leading-relaxed font-light">
+                  <p>
+                    Ankara’nın dinamik bölgeleri <strong className="font-semibold text-[#1A237E]">Hüseyingazi ve Karapürçek’te</strong>, ambalaj sektörünün temellerini atan bölgenin <strong className="font-semibold text-brand-red">ilk</strong> poşetçisi ve ambalaj toptancısı olmanın gururunu taşıyoruz. 15 yıl önce, sadece bir ticarethane olarak değil, bölge esnafının ve sanayisinin güvenilir yol arkadaşı olma vizyonuyla yola çıktık.
+                  </p>
+                  <p>
+                    Tıpkı ulu bir çınar ağacı gibi, yıllar içinde köklerimizi bu topraklara daha derinlemesine saldık. Gıda ambalajlarından endüstriyel çözümlere, estetik süs malzemelerinden profesyonel pastacılık çeşitlerine kadar uzanan geniş ürün yelpazemizle, kaliteden asla ödün vermedik.
+                  </p>
+                  <p>
+                    Bizim için ambalaj; sadece bir ürünü sarmak değil, emeği korumak, markayı yüceltmek ve sunumu kusursuz kılmaktır. <strong className="font-semibold text-[#1A237E]">Arya Ambalaj</strong> adı, bugün <strong className="font-semibold text-green-600">15 yıllık tecrübenin</strong> getirdiği sağlamlık, dürüst ticaret ve sarsılmaz güven ile eşdeğerdir.
+                  </p>
+                  <p className="border-l-4 border-brand-red pl-6 italic text-[#1A237E] font-medium my-8">
+                    Sizlerden aldığımız güçle, tecrübemizi modern çözümlerle birleştirerek, gelecekte de bölgenin en sağlam halkası olmaya devam edeceğiz.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Visual Side */}
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="lg:col-span-6 relative"
+              >
+                {/* Image Placeholder representing Modern Warehouse / Rooted Trust */}
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl group border-[8px] border-white">
+                  <div className="absolute inset-0 bg-brand-red/10 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-700 z-10"></div>
+                  <div className="w-full h-[600px] bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl flex items-center justify-center relative overflow-hidden">
+                    <Leaf className="w-48 h-48 text-white/5 absolute -top-10 -right-10" />
+                    <Box className="w-48 h-48 text-white/5 absolute -bottom-10 -left-10" />
+                    
+                    <div className="text-center px-8 relative z-20">
+                      <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-md border border-white/20">
+                        <Award className="w-12 h-12 text-white" />
+                      </div>
+                      <h3 className="text-white text-3xl font-bold mb-2">Kurumsal<br/>Güvence</h3>
+                      <p className="text-slate-300 font-light max-w-sm mx-auto">Kalite ve dürüstlükle yoğurulmuş 15 yıllık sarsılmaz tecrübe.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Decorative floating badge */}
+                 <motion.div 
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.6, type: "spring", stiffness: 200 }}
+                  className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden md:flex items-center gap-4 z-20"
+                >
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                    <Star className="w-8 h-8 text-green-600" />
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-gray-500 font-bold mb-1">Bölgenin İlk Toptancısı</p>
+                    <p className="text-2xl font-black text-slate-900">1 Numaralı Tercih</p>
+                  </div>
+                </motion.div>
+              </motion.div>
+
+            </div>
+          </div>
+        </section>
+
         {/* NEW CONTACT SECTION - Minimalist sleek side-by-side */}
         <section id="iletisim" className="py-0 overflow-hidden">
           <div className="w-full flex flex-col lg:flex-row">
