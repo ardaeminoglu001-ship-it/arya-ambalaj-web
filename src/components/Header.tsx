@@ -1,5 +1,6 @@
 "use client";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -16,7 +17,7 @@ export function Header() {
 
           <nav className="hidden md:flex space-x-8">
             <a href="#hakkimizda" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Hakkımızda</a>
-            <a href="#urunler" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Ürünler</a>
+            <Link href="/katalog" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Katalog / Ürünlerimiz</Link>
             <a href="#iletisim" className="text-gray-600 hover:text-brand-red font-medium transition-colors">İletişim</a>
           </nav>
 
@@ -43,7 +44,7 @@ export function Header() {
           >
             <div className="px-4 py-4 space-y-4 flex flex-col">
               <a href="#hakkimizda" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Hakkımızda</a>
-              <a href="#urunler" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Ürünler</a>
+              <Link href="/katalog" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Katalog / Ürünlerimiz</Link>
               <a href="#iletisim" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">İletişim</a>
               <a href="tel:05424434495" className="text-brand-red font-bold py-2">0542 443 44 95</a>
             </div>
