@@ -11,10 +11,11 @@ export default function Home() {
         {/* NEW HERO SECTION - Full height, cinematic */}
         <section className="relative w-full h-[90vh] min-h-[700px] flex items-end pb-24 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
           {/* Subtle gradient overlay to ensure text readability without hiding the image */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-brand-navy/50 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-            <div className="max-w-3xl glass-panel p-8 md:p-12 rounded-3xl border border-white/20 shadow-2xl backdrop-blur-xl">
+            <div className="max-w-3xl bg-slate-900/60 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-md">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-900/40 border border-green-400/30 text-green-100 text-sm font-medium mb-6">
                 <Leaf className="w-4 h-4 text-green-400" />
                 <span>Çevre Dostu Ambalaj Çözümleri</span>
