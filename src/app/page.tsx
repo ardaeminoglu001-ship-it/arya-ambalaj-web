@@ -54,8 +54,32 @@ export default function Home() {
           </div>
         </section>
 
+        {/* NEW CATALOG CTA BANNER */}
+        <section className="py-20 bg-white relative z-20">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-brand-red rounded-3xl p-10 md:p-16 text-white shadow-2xl relative overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-64 h-64 bg-red-600/50 rounded-bl-full -z-10"></div>
+              <PackageOpen className="w-16 h-16 text-red-300 mb-6 mx-auto" />
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">Geniş Ürün Yelpazemiz</h3>
+              <p className="text-red-100 text-lg mb-8 max-w-xl mx-auto">
+                Yüzlerce ambalaj ve paketleme çeşidi arasından ihtiyacınıza en uygun olanı bulmak için kataloğumuzu inceleyin.
+              </p>
+              <Link href="/katalog" className="inline-flex items-center gap-2 bg-white text-brand-red px-8 py-4 rounded-full font-bold hover:bg-slate-50 transition-all shadow-lg hover:scale-105">
+                Katalog / Ürünlerimize Git
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+
         {/* NEW TRUST RIBBON - Sleek horizontal bar */}
-        <section className="bg-brand-red py-12 border-y border-white/10 relative z-20 shadow-2xl overflow-hidden">
+        <section id="hakkimizda" className="bg-brand-red py-12 border-y border-white/10 relative z-20 shadow-2xl overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/10">
               
@@ -108,30 +132,6 @@ export default function Home() {
               </motion.div>
 
             </div>
-          </div>
-        </section>
-
-        {/* NEW CATALOG CTA BANNER */}
-        <section className="py-20 bg-white relative z-20">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-brand-red rounded-3xl p-10 md:p-16 text-white shadow-2xl relative overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 w-64 h-64 bg-red-600/50 rounded-bl-full -z-10"></div>
-              <PackageOpen className="w-16 h-16 text-red-300 mb-6 mx-auto" />
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">Geniş Ürün Yelpazemiz</h3>
-              <p className="text-red-100 text-lg mb-8 max-w-xl mx-auto">
-                Yüzlerce ambalaj ve paketleme çeşidi arasından ihtiyacınıza en uygun olanı bulmak için kataloğumuzu inceleyin.
-              </p>
-              <Link href="/katalog" className="inline-flex items-center gap-2 bg-white text-brand-red px-8 py-4 rounded-full font-bold hover:bg-slate-50 transition-all shadow-lg hover:scale-105">
-                Katalog / Ürünlerimize Git
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </motion.div>
           </div>
         </section>
 

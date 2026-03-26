@@ -20,8 +20,8 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-6 border-b border-slate-700 pb-2 inline-block">Hızlı Bağlantılar</h3>
             <ul className="space-y-3">
               <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">Ana Sayfa</Link></li>
-              <li><a href="/#hakkimizda" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
               <li><Link href="/katalog" className="text-gray-400 hover:text-white transition-colors">Katalog / Ürünlerimiz</Link></li>
+              <li><a href="/#hakkimizda" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
               <li><a href="/#iletisim" className="text-gray-400 hover:text-white transition-colors">Bize Ulaşın</a></li>
             </ul>
           </div>
