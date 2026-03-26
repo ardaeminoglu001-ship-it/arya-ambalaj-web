@@ -16,9 +16,10 @@ export function Header() {
           </div>
 
           <nav className="hidden md:flex space-x-8">
-            <a href="#hakkimizda" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Hakkımızda</a>
+            <Link href="/" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Ana Sayfa</Link>
+            <a href="/#hakkimizda" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Hakkımızda</a>
             <Link href="/katalog" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Katalog / Ürünlerimiz</Link>
-            <a href="#iletisim" className="text-gray-600 hover:text-brand-red font-medium transition-colors">İletişim</a>
+            <a href="/#iletisim" className="text-gray-600 hover:text-brand-red font-medium transition-colors">İletişim</a>
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
@@ -43,9 +44,10 @@ export function Header() {
             className="md:hidden bg-white border-b border-gray-100 overflow-hidden"
           >
             <div className="px-4 py-4 space-y-4 flex flex-col">
-              <a href="#hakkimizda" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Hakkımızda</a>
+              <Link href="/" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Ana Sayfa</Link>
+              <a href="/#hakkimizda" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Hakkımızda</a>
               <Link href="/katalog" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Katalog / Ürünlerimiz</Link>
-              <a href="#iletisim" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">İletişim</a>
+              <a href="/#iletisim" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">İletişim</a>
               <a href="tel:05424434495" className="text-brand-red font-bold py-2">0542 443 44 95</a>
             </div>
           </motion.div>
