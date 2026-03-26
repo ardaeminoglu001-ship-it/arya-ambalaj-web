@@ -23,15 +23,7 @@ export default function Home() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="max-w-3xl bg-slate-900/60 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-md"
             >
-              <motion.div 
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-900/40 border border-green-400/30 text-green-100 text-sm font-medium mb-6"
-              >
-                <Leaf className="w-4 h-4 text-green-400" />
-                <span>Çevre Dostu Ambalaj Çözümleri</span>
-              </motion.div>
+
               
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
                 Ambalajda <span className="text-green-400">15 Yıllık</span> <br/>
