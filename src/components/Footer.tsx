@@ -21,8 +21,8 @@ export function Footer() {
             <ul className="space-y-3">
               <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">Ana Sayfa</Link></li>
               <li><Link href="/katalog" className="text-gray-400 hover:text-white transition-colors">Katalog / Ürünlerimiz</Link></li>
-              <li><a href="/#hakkimizda" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
-              <li><a href="/#iletisim" className="text-gray-400 hover:text-white transition-colors">Bize Ulaşın</a></li>
+              <li><Link href="/#hakkimizda" className="text-gray-400 hover:text-white transition-colors">Hakkımızda</Link></li>
+              <li><Link href="/#iletisim" className="text-gray-400 hover:text-white transition-colors">Bize Ulaşın</Link></li>
             </ul>
           </div>
 

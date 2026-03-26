@@ -2,7 +2,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import Link from "next/link";
-import { ShieldCheck, Truck, Box, Coffee, Phone, ArrowRight, Star, MapPin, Map, PackageOpen, Leaf, Zap, Award } from "lucide-react";
+import { Box, Phone, ArrowRight, Star, MapPin, Leaf, Award } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
               </h1>
               
               <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl font-light">
-                Ankara'nın kalbinde, Hüseyingazi ve Karapürçek bölgelerinin öncü toptancısı: Arya Ambalaj! 15 yıllık sarsılmaz tecrübemiz ve kaliteden ödün vermeyen anlayışımızla; gıda, endüstriyel, paketleme, süs ve pastacılık ambalajlarında aradığınız her şeyi tek çatı altında buluşturuyoruz.
+                Ankara&apos;nın kalbinde, Hüseyingazi ve Karapürçek bölgelerinin öncü toptancısı: Arya Ambalaj! 15 yıllık sarsılmaz tecrübemiz ve kaliteden ödün vermeyen anlayışımızla; gıda, endüstriyel, paketleme, süs ve pastacılık ambalajlarında aradığınız her şeyi tek çatı altında buluşturuyoruz.
               </p>
               
               <motion.div 
@@ -83,7 +83,7 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-2">Öne Çıkan Ürünler Güncelleniyor</h4>
               <p className="text-gray-500 mb-8">
-                Admin paneli üzerinden "Öne Çıkar" olarak işaretlenen ürünleriniz burada dinamik olarak listelenecektir.
+                Admin paneli üzerinden &quot;Öne Çıkar&quot; olarak işaretlenen ürünleriniz burada dinamik olarak listelenecektir.
               </p>
               <Link href="/katalog" className="inline-flex items-center gap-2 bg-slate-900 text-white px-8 py-3 rounded-full font-bold hover:bg-brand-red transition-colors shadow-lg shadow-red-900/20">
                 Tüm Kataloğu İncele
@@ -252,7 +252,7 @@ export default function Home() {
                 className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-8 py-4 rounded-full font-bold shadow-2xl hover:bg-green-600 transition-colors flex items-center gap-3 z-10 whitespace-nowrap"
               >
                 <MapPin className="w-5 h-5" />
-                Google Haritalar'da Aç
+                Google Haritalar&apos;da Aç
               </motion.a>
             </motion.div>
           </div>
