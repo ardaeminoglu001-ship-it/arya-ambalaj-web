@@ -12,26 +12,25 @@ export default function Home() {
       <main className="flex-grow pt-20 bg-slate-50">
         
         {/* NEW HERO SECTION - Full height, cinematic */}
-        <section className="relative w-full h-[90vh] min-h-[700px] flex items-end pb-24 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
+        <section className="relative w-full min-h-[100dvh] lg:min-h-[85vh] lg:h-[90vh] flex items-center lg:items-end pb-12 pt-32 lg:pt-0 lg:pb-24 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
           {/* Subtle gradient overlay to ensure text readability without hiding the image */}
           <div className="absolute inset-0 bg-brand-red/50 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/60 lg:via-slate-900/30 to-transparent"></div>
           
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full mt-10 md:mt-0">
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="max-w-3xl bg-slate-900/60 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl backdrop-blur-md"
+              className="max-w-3xl bg-slate-900/70 lg:bg-slate-900/60 p-6 sm:p-8 md:p-12 rounded-2xl lg:rounded-3xl border border-white/10 shadow-2xl backdrop-blur-md"
             >
 
-              
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
-                Ambalajda <span className="text-green-400">15 Yıllık</span> <br/>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold text-white mb-4 lg:mb-6 leading-tight tracking-tight">
+                Ambalajda <span className="text-green-400">15 Yıllık</span> <br className="hidden sm:block"/>
                 Kök Salmış Güven
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl font-light">
+              <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 lg:mb-8 max-w-xl font-light leading-relaxed">
                 Ankara&apos;nın kalbinde, Hüseyingazi ve Karapürçek bölgelerinin öncü toptancısı: Arya Ambalaj! 15 yıllık sarsılmaz tecrübemiz ve kaliteden ödün vermeyen anlayışımızla; gıda, endüstriyel, paketleme, süs ve pastacılık ambalajlarında aradığınız her şeyi tek çatı altında buluşturuyoruz.
               </p>
               
@@ -39,13 +38,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="flex flex-wrap gap-4"
+                className="flex flex-col sm:flex-row flex-wrap gap-3 lg:gap-4"
               >
-                <Link href="/katalog" className="bg-green-600 text-white px-8 py-4 rounded-full font-bold hover:bg-green-500 transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-900/30 hover:scale-105">
+                <Link href="/katalog" className="bg-green-600 text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full font-bold hover:bg-green-500 transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-900/30 hover:scale-105 w-full sm:w-auto">
                   Ürünleri Keşfet
                   <ArrowRight className="w-5 h-5" />
                 </Link>
-                <a href="tel:05424434495" className="bg-white/10 text-white border border-white/20 px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2 backdrop-blur-md">
+                <a href="tel:05424434495" className="bg-white/10 text-white border border-white/20 px-6 lg:px-8 py-3 lg:py-4 rounded-full font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2 backdrop-blur-md w-full sm:w-auto">
                   <Phone className="w-5 h-5" />
                   0542 443 44 95
                 </a>
