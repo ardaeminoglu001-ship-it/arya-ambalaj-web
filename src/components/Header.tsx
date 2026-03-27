@@ -8,7 +8,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <header className="fixed w-full top-0 z-50 bg-white/70 backdrop-blur-xl shadow-sm border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center gap-2">
@@ -40,7 +40,7 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-gray-100 overflow-hidden"
+            className="md:hidden bg-white/90 backdrop-blur-xl border-b border-gray-100 overflow-hidden"
           >
             <div className="px-4 py-4 space-y-4 flex flex-col">
               <Link href="/" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Ana Sayfa</Link>
