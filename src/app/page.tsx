@@ -167,7 +167,7 @@ export default function Home() {
                     </h3>
                     
                     <p className="text-gray-300 font-light text-lg mb-8 max-w-sm">
-                      Kalite ve dürüstlükle yoğurulmuş 15 yıllık sarsılmaz tecrübe. Her siparişte aynı hassasiyet.
+                      Kalite ve dürüstlükle yoğurulmuş 15 yıllık sarsılmaz tecrübe.
                     </p>
 
                     {/* Glassmorphism Stats Bar */}
