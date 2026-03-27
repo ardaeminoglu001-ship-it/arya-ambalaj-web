@@ -144,20 +144,45 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="lg:col-span-6 relative"
               >
-                {/* Image Placeholder representing Modern Warehouse / Rooted Trust */}
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl group border-[8px] border-white">
-                  <div className="absolute inset-0 bg-brand-red/10 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-700 z-10"></div>
-                  <div className="w-full h-[600px] bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                    <Leaf className="w-48 h-48 text-white/5 absolute -top-10 -right-10" />
-                    <Box className="w-48 h-48 text-white/5 absolute -bottom-10 -left-10" />
+                {/* Premium Corporate Trust Visual */}
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl group border-[8px] border-white h-[600px]">
+                  {/* High Quality Background Image (Packaging/Warehouse theme) */}
+                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586528116311-ad8ed7c8008a?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"></div>
+                  
+                  {/* Premium Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-brand-red/10 mix-blend-multiply"></div>
+                  
+                  {/* Content Container */}
+                  <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-10 z-20">
                     
-                    <div className="text-center px-8 relative z-20">
-                      <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 backdrop-blur-md border border-white/20">
-                        <Award className="w-12 h-12 text-white" />
-                      </div>
-                      <h3 className="text-white text-3xl font-bold mb-2">Kurumsal<br/>Güvence</h3>
-                      <p className="text-slate-300 font-light max-w-sm mx-auto">Kalite ve dürüstlükle yoğurulmuş 15 yıllık sarsılmaz tecrübe.</p>
+                    {/* Glowing Trust Badge */}
+                    <div className="w-16 h-16 bg-brand-red rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(220,38,38,0.6)] transform -rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                      <Award className="w-8 h-8 text-white" />
                     </div>
+                    
+                    <h3 className="text-white text-4xl md:text-5xl font-extrabold mb-3 leading-tight tracking-tight">
+                      Kurumsal <br/>
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-white">Güvence</span>
+                    </h3>
+                    
+                    <p className="text-gray-300 font-light text-lg mb-8 max-w-sm">
+                      Kalite ve dürüstlükle yoğurulmuş 15 yıllık sarsılmaz tecrübe. Her siparişte aynı hassasiyet.
+                    </p>
+
+                    {/* Glassmorphism Stats Bar */}
+                    <div className="flex items-center gap-6 p-5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl">
+                       <div className="flex-1">
+                         <div className="text-3xl font-black text-white">15+</div>
+                         <div className="text-[10px] md:text-xs text-red-200 uppercase tracking-wider font-bold mt-1">Yıllık Deneyim</div>
+                       </div>
+                       <div className="w-px h-12 bg-white/20"></div>
+                       <div className="flex-1">
+                         <div className="text-3xl font-black text-white">%100</div>
+                         <div className="text-[10px] md:text-xs text-red-200 uppercase tracking-wider font-bold mt-1">Mutlu Müşteri</div>
+                       </div>
+                    </div>
+
                   </div>
                 </div>
                 
