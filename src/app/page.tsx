@@ -12,12 +12,12 @@ export default function Home() {
       <main className="flex-grow pt-20 bg-slate-50">
         
         {/* NEW HERO SECTION - Full height, cinematic */}
-        <section className="relative w-full min-h-[100dvh] lg:min-h-[85vh] lg:h-[90vh] flex items-center lg:items-end pb-12 pt-32 lg:pt-0 lg:pb-24 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
+        <section className="relative w-full min-h-[100dvh] lg:min-h-[600px] lg:h-[85vh] flex items-center py-24 lg:py-0 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
           {/* Subtle gradient overlay to ensure text readability without hiding the image */}
           <div className="absolute inset-0 bg-brand-red/50 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/60 lg:via-slate-900/30 to-transparent"></div>
           
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full mt-10 md:mt-0">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
