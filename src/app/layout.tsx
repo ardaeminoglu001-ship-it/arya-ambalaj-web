@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     type: "website",
   },
+  alternates: {
+    canonical: "https://aryaambalaj.com.tr",
+  },
   robots: {
     index: true,
     follow: true,

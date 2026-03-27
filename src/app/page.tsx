@@ -12,7 +12,7 @@ export default function Home() {
       <main className="flex-grow pt-20 bg-slate-50">
         
         {/* NEW HERO SECTION - Full height, cinematic */}
-        <section className="relative w-full min-h-[100dvh] lg:min-h-[600px] lg:h-[85vh] flex items-center py-24 lg:py-0 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
+        <section aria-label="Ankara Toptan Ambalaj Merkezi" role="img" className="relative w-full min-h-[100dvh] lg:min-h-[600px] lg:h-[85vh] flex items-center py-24 lg:py-0 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
           {/* Subtle gradient overlay to ensure text readability without hiding the image */}
           <div className="absolute inset-0 bg-brand-red/50 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/60 lg:via-slate-900/30 to-transparent"></div>
@@ -63,7 +63,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <h3 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">Öne Çıkan Ürünlerimiz</h3>
+              <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">Öne Çıkan Ürünlerimiz</h2>
               <p className="text-lg text-gray-500 max-w-2xl mx-auto">
                 Müşterilerimiz tarafından en çok tercih edilen ve kalitesiyle fark yaratan seçili ürünlerimiz.
               </p>
@@ -80,7 +80,7 @@ export default function Home() {
               <div className="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Star className="w-10 h-10 text-brand-red" />
               </div>
-              <h4 className="text-xl font-bold text-slate-900 mb-2">Öne Çıkan Ürünler Güncelleniyor</h4>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Öne Çıkan Ürünler Güncelleniyor</h3>
               <p className="text-gray-500 mb-8">
                 Admin paneli üzerinden &quot;Öne Çıkar&quot; olarak işaretlenen ürünleriniz burada dinamik olarak listelenecektir.
               </p>
@@ -147,7 +147,7 @@ export default function Home() {
                 {/* Premium Corporate Trust Visual */}
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl group border-[8px] border-white h-[600px]">
                   {/* High Quality Background Image (Packaging/Warehouse theme) */}
-                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586528116311-ad8ed7c8008a?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"></div>
+                  <div aria-label="Profesyonel depo ve ürün sevkiyatı" role="img" className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586528116311-ad8ed7c8008a?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"></div>
                   
                   {/* Premium Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
@@ -231,7 +231,7 @@ export default function Home() {
                         <MapPin className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="text-xs uppercase tracking-widest text-red-300 font-bold mb-1">Adres</h4>
+                        <h3 className="text-xs uppercase tracking-widest text-red-300 font-bold mb-1">Adres</h3>
                         <p className="text-xl font-medium">Beşikkaya Mah. 1953. Sk. No:6,<br/>06360 Altındağ / Ankara</p>
                       </div>
                     </div>
@@ -241,7 +241,7 @@ export default function Home() {
                         <Phone className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h4 className="text-xs uppercase tracking-widest text-red-300 font-bold mb-1">Direkt Hat & WhatsApp</h4>
+                        <h3 className="text-xs uppercase tracking-widest text-red-300 font-bold mb-1">Direkt Hat & WhatsApp</h3>
                         <a href="tel:05424434495" className="text-xl font-medium hover:text-green-400 transition-colors">0542 443 44 95</a>
                       </div>
                     </div>
