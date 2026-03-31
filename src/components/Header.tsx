@@ -23,8 +23,8 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:05424434495" className="font-semibold text-brand-red">0542 443 44 95</a>
-            <a href="https://wa.me/905424434495" target="_blank" rel="noreferrer" className="bg-brand-red text-white px-6 py-2.5 rounded-full font-medium hover:bg-green-600 transition-colors shadow-lg shadow-red-900/20">
+            <a href="https://wa.me/905424434495?text=Merhaba,%20fiyat%20teklifi%20alabilir%20miyim?" target="_blank" rel="noreferrer" className="font-semibold text-brand-red">0542 443 44 95</a>
+            <a href="https://wa.me/905424434495?text=Merhaba,%20fiyat%20teklifi%20alabilir%20miyim?" target="_blank" rel="noreferrer" className="bg-brand-red text-white px-6 py-2.5 rounded-full font-medium hover:bg-green-600 transition-colors shadow-lg shadow-red-900/20">
               Fiyat Teklifi Al
             </a>
           </div>
@@ -48,7 +48,7 @@ export function Header() {
               <Link href="/katalog" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Katalog / Ürünlerimiz</Link>
               <Link href="/#hakkimizda" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Hakkımızda</Link>
               <Link href="/#iletisim" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">İletişim</Link>
-              <a href="tel:05424434495" className="text-brand-red font-bold py-2">0542 443 44 95</a>
+              <a href="https://wa.me/905424434495?text=Merhaba,%20fiyat%20teklifi%20alabilir%20miyim?" target="_blank" rel="noreferrer" className="text-brand-red font-bold py-2">0542 443 44 95</a>
             </div>
           </motion.div>
         )}

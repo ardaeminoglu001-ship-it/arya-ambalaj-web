@@ -44,7 +44,7 @@ export default function Home() {
                   Ürünleri Keşfet
                   <ArrowRight className="w-5 h-5" />
                 </Link>
-                <a href="tel:05424434495" className="bg-white/10 text-white border border-white/20 px-6 lg:px-8 py-3 lg:py-4 rounded-full font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2 backdrop-blur-md w-full sm:w-auto">
+                <a href="https://wa.me/905424434495?text=Merhaba,%20fiyat%20teklifi%20alabilir%20miyim?" target="_blank" rel="noreferrer" className="bg-white/10 text-white border border-white/20 px-6 lg:px-8 py-3 lg:py-4 rounded-full font-bold hover:bg-white/20 transition-all flex items-center justify-center gap-2 backdrop-blur-md w-full sm:w-auto">
                   <Phone className="w-5 h-5" />
                   0542 443 44 95
                 </a>
@@ -242,7 +242,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="text-xs uppercase tracking-widest text-red-300 font-bold mb-1">Direkt Hat & WhatsApp</h3>
-                        <a href="tel:05424434495" className="text-xl font-medium hover:text-green-400 transition-colors">0542 443 44 95</a>
+                        <a href="https://wa.me/905424434495?text=Merhaba,%20fiyat%20teklifi%20alabilir%20miyim?" target="_blank" rel="noreferrer" className="text-xl font-medium hover:text-green-400 transition-colors">0542 443 44 95</a>
                       </div>
                     </div>
                  </div>

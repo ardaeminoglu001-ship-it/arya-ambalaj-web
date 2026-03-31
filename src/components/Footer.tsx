@@ -35,7 +35,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <Phone className="w-5 h-5 text-red-400 shrink-0" />
-                <a href="tel:05424434495" className="hover:text-white transition-colors">0542 443 44 95</a>
+                <a href="https://wa.me/905424434495?text=Merhaba,%20fiyat%20teklifi%20alabilir%20miyim?" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">0542 443 44 95</a>
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <Mail className="w-5 h-5 text-red-400 shrink-0" />
