@@ -18,6 +18,7 @@ export function Header() {
           <nav className="hidden md:flex space-x-8">
             <Link href="/" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Ana Sayfa</Link>
             <Link href="/katalog" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Katalog / Ürünlerimiz</Link>
+            <Link href="/#hakkimizda" className="text-gray-600 hover:text-brand-red font-medium transition-colors">Hakkımızda</Link>
             <Link href="/#iletisim" className="text-gray-600 hover:text-brand-red font-medium transition-colors">İletişim</Link>
           </nav>
 
@@ -45,6 +46,7 @@ export function Header() {
             <div className="px-4 py-4 space-y-4 flex flex-col">
               <Link href="/" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Ana Sayfa</Link>
               <Link href="/katalog" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Katalog / Ürünlerimiz</Link>
+              <Link href="/#hakkimizda" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">Hakkımızda</Link>
               <Link href="/#iletisim" onClick={() => setIsOpen(false)} className="text-gray-600 hover:text-brand-red font-medium">İletişim</Link>
               <a href="tel:05424434495" className="text-brand-red font-bold py-2">0542 443 44 95</a>
             </div>
